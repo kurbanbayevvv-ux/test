@@ -6,7 +6,9 @@ from aiogram import Bot, Dispatcher
 from dotenv import load_dotenv
 
 from handlers.start import router as start_router
-from states.register import router as register_router
+from handlers.balance import router as balance_router
+from handlers.card import router as card_router
+from handlers.otkazma import router as otkazma_router
 
 load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")
@@ -19,7 +21,9 @@ async def main():
 
     # router ulash
     dp.include_router(start_router)
-    dp.include_router(register_router)
+    dp.include_router(balance_router)
+    dp.include_router(card_router)
+    dp.include_router(otkazma_router)
 
     print("Bot ishga tushdi...")
 
