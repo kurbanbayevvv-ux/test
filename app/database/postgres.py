@@ -2,7 +2,7 @@ import psycopg2
 import os
 from dotenv import load_dotenv
 
-from app.utils.generate_card_number import generateCardNumber
+from utils.generate_card_number import generateCardNumber
 
 from datetime import date
 from dateutil.relativedelta import relativedelta
