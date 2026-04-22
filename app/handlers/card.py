@@ -3,9 +3,9 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from aiogram.types import CallbackQuery
 
-from app.database.postgres import get_all_cards, create_card, get_card
+from database.postgres import get_all_cards, create_card, get_card
 
-from app.keyboards.type_card_inline_keyboard import type_card_inline_keyboard
+from keyboards.type_card_inline_keyboard import type_card_inline_keyboard
 
 router = Router()
 

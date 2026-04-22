@@ -1,6 +1,6 @@
 from aiogram import Router, types, F
 
-from app.database.postgres import get_all_balance
+from database.postgres import get_all_balance
 
 router = Router()
 

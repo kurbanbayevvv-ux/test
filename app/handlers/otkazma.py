@@ -2,7 +2,7 @@ from aiogram import Router, types, F
 
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from app.database.postgres import setPage, getPage, get_card, get_card_owner, get_all_cards, card_to_card
+from database.postgres import setPage, getPage, get_card, get_card_owner, get_all_cards, card_to_card
 
 router = Router()
 

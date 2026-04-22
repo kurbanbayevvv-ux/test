@@ -1,9 +1,9 @@
 from aiogram import Router, types
 from aiogram.filters import CommandStart
 
-from app.database.postgres import Register, setPage
+from database.postgres import Register, setPage
 
-from app.keyboards.main_keyboard import main_keyboard
+from keyboards.main_keyboard import main_keyboard
 
 router = Router()
 
